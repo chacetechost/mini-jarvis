@@ -2,7 +2,7 @@
 [
   {"tag": "greeting",
    "patterns": ["Hey", "Hello", "What's up?", "How is it going?", "Hi", "Good day, Chace"],
-   "responses": ["Hello sir!", "Hello, what can i do for you?"]},
+   "responses": ["Hello Chace, what can i do for you?"]},
   {"tag": "create_note",
    "patterns": ["Please create a new note", "New note", "Create a note", "I want to create a note."],
    "responses": [""]},
