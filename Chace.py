@@ -1,4 +1,4 @@
-from neuralintents import GenericAssistant 
+from neuralintents import BasicAssistant
 import speech_recognition
 import pyttsx3 as tts
 import sys
@@ -107,12 +107,13 @@ mappings = {
     "greeting": hello, 
     "add_todo": add_todo,
     "create_note": create_note,
-    "show_todos": show_todo,
+    "show_todo": show_todo,
     "exit": quit
     }
 
-assistant = GenericAssistant('intents.json', intent_methods=mappings)
-assistant.train_model()
+assistant = BasicAssistant('intents.json', method_mappings=mappings)
+assistant.load_model()
+
 
 while True:
 
